@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viaje a París</title>
+        <style>
+        body {
+            font-family: Arial, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            display: flex;
+            justify-content: center;
+            background-color: #f4f4f9;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        table {
+            width: 80%;
+            border-collapse: collapse;
+            margin: 25px 0;
+        }
+        th, td {
+            padding: 10px;
+            text-align: center;
+            border: 1px solid #ddd;
+        }
+        th {
+            background-color: #ff0303;
+            color: white;
+            font-weight: bold;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        tr:hover {
+            background-color: #e0f7fa;
+        }
+        .day-off {
+            background-color: #012cff;
+            color: #ffffff;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Viaje a París</h1>
+        <p>Viaja a la ciudad del amor y pasalo guay con tu pareja</p>
+    </header>
+
+    <div class="container">
+        <img src="https://pixabay.com/es/photos/lumbrera-arquitectura-edificios-5767708/" alt="Imagen de París">
+        <img src="https://pixabay.com/es/photos/torre-eiffel-francia-par%C3%ADs-paisaje-975004/" alt="Imagen de París">
+        <img src="https://sobreparis.com/informacion-de-paris/" alt="Imagen de París">
+
+        <h2>Actividades y lugares para visitar</h2>
+        <ul>
+            <li>Torre Eiffel</li>
+            <li>Museo del Louvre</li>
+            <li>Catedral de Notre Dame</li>
+            <li>Río Sena</li>
+        </ul>        
+        <h3>Tabla de precios según la edad</h3>
+        <table>
+            <thead>
+                <tr>                    
+                    <th>Precio Viaje</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Adulto</td>
+                    <td>100 €</td>
+                </tr>
+                <tr>
+                    <td>Niño</td>
+                    <td>25 €</td>
+                </tr>
+                <tr>
+                    <td>Joven</td>
+                    <td>50 €</td>
+                </tr>
+                <tr>
+                    <td>Jubilado</td>
+                    <td>30 €</td>
+                </tr>
+            </tbody>
+        </table>
+        <h2>Formulario de reserva</h2>
+        <form>
+            <label for="nombre">Nombre:</label>
+            <input type="text" placeholder="nombre" name="nombre" required>
+            
+            <label for="email">Correo electrónico:</label>
+            <input type="email" placeholder="email" name="email" required>
+            
+            <label for="telefono">Teléfono (opcional):</label>
+            <input type="tel" placeholder="telefono" name="telefono">
+
+            <label for="tipo-reserva">Tipo de reserva:</label>
+            <select id="tipo-reserva" name="tipo-reserva" required>
+                <option value="adulto">Adulto</option>
+                <option value="niño">Niño</option>
+                <option value="joven">Joven</option>
+                <option value="jubilado">Jubilado</option>
+            </select>
+            
+            <label>
+                <input type="checkbox" name="terminos" required> Acepto los términos y condiciones
+            </label>
+            
+            <button type="presionar">Reservar</button>
+        </form>
+    </div>
+</body>
+</html>

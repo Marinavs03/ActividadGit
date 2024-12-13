@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matrícula Online</title>
+</head>
+<body>
+    <h1>Formulario de Matrícula</h1>
+    <form>
+        <input type="text" placeholder="Nombre" required><br>
+        <input type="text" placeholder="Apellidos" required><br>
+        <input type="email" placeholder="Correo" required><br>
+        <input type="tel" placeholder="Teléfono" required><br>
+        <input type="date" required><br>
+        <p>Talla:</p>
+        <label><input type="radio" name="talla" value="S" required> S</label>
+        <label><input type="radio" name="talla" value="M"> M</label>
+        <label><input type="radio" name="talla" value="L"> L</label><br>
+        <select required>
+            <option disabled selected>Grado</option>
+            <option>SMR</option>
+            <option>DAM</option>
+            <option>DAW</option>
+        </select><br>
+        <select required>
+            <option disabled selected>Curso</option>
+            <option>1º</option>
+            <option>2º</option>
+        </select><br>
+        <input type="text" placeholder="Titulación"><br>
+        <input type="file" accept=".pdf, .png"><br>
+        <textarea placeholder="Información adicional"></textarea><br>
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>
